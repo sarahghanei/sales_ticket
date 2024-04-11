@@ -132,7 +132,7 @@ class Admin(Person):
                 df_first.to_csv("event.csv", index=False)
                 print("delete successfully")
                 break
-                logger.info("event %s is removed." % id_remove)
+                logger.info("event %s is removed.", id_remove)
             except EOFError:
                 # raised when a built-in function  do not read any data before encountering
                 print("File is empty. You must add a event first before you can remove it.")
